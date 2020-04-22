@@ -12,7 +12,7 @@ class TicketControl extends React.Component {
     };
   }
 
-  handleClick() {
+  handleClick = () => {
     this.setState(prevState => ({
       formVisibleOnPage: !prevState.formVisibleOnPage
     }));
@@ -20,8 +20,7 @@ class TicketControl extends React.Component {
 
   handleAddingNewTicketToList = (newTicket) => {
     const newMasterTicketList = this.state.masterTicketList.concat(newTicket);
-    this.setState({masterTicketList: newMasterTicketList});
-    this.setState({formVisibleOnPage: false});
+    this.setState({masterTicketList: newMasterTicketList, formVisibleOnPage: false});
   }
 
   render(){
