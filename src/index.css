@@ -5,9 +5,33 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+input, textarea {
+  margin: 5px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+button {
+  margin: 10px;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+
+button:hover {
+  opacity: .6;
+  border: 5px solid gray;
+  cursor: pointer;
+}
+
+.clickable:hover {
+  cursor: pointer;
+  opacity: .6;
 }
