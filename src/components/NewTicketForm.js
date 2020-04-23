@@ -15,14 +15,14 @@ function NewTicketForm(props){
         <input
           type='text'
           name='names'
-          placeholder='Pair Names' />
+          placeholder='Pair Names' /><br />
         <input
           type='text'
           name='location'
-          placeholder='Location' />
+          placeholder='Location' /><br />
         <textarea
           name='issue'
-          placeholder='Describe your issue.' />
+          placeholder='Describe your issue.' /><br />
         <button type='submit'>Help!</button>
       </form>
     </React.Fragment>
